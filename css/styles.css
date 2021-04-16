@@ -21,8 +21,8 @@ body {
   flex-direction: column;
   width: 100%;
   background: hsl(300, 24%, 96%);
-  margin-bottom: 2rem;
-  border-radius: 17px;
+  margin-bottom: 1.7rem;
+  border-radius: 13px;
 }
 .five-star {
   text-align: center;
@@ -72,4 +72,10 @@ body {
   padding: 3rem;
   overflow: hidden;
   border-radius: 20px;
+}
+
+.block {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
