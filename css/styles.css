@@ -13,11 +13,24 @@ body {
   padding-top: 7rem;
   line-height: 1;
 }
+@media screen and (min-width: 800px) {
+  .body__heading {
+    padding-top: 1rem;
+    font-size: 4.5rem;
+  }
+}
 .body__text {
   text-align: center;
   color: hsl(303, 10%, 53%);
   margin-top: 2rem;
   font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .body__heading,
+  .body__text {
+    text-align: left;
+  }
 }
 /* Rating Component */
 .rating {
@@ -28,9 +41,21 @@ body {
   margin-bottom: 1.7rem;
   border-radius: 13px;
 }
+@media screen and (min-width: 800px) {
+  .rating {
+    flex-direction: row;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 .five-star {
   text-align: center;
   margin-top: 1.5rem;
+}
+@media screen and (min-width: 800px) {
+  .five-star {
+    padding-right: 3rem;
+  }
 }
 .rating__text {
   margin-bottom: 1.5rem;
@@ -39,7 +64,16 @@ body {
   text-align: center;
   font-weight: 700;
 }
-
+@media screen and (min-width: 800px) {
+  .most {
+    position: relative;
+    right: 8vw;
+  }
+  .middle {
+    position: relative;
+    right: 4vw;
+  }
+}
 /* Testimonial Component */
 .user__image {
   width: 38px;
@@ -47,6 +81,7 @@ body {
   object-fit: cover;
   border-radius: 100%;
   margin-right: 15px;
+  transition: all 0.3s;
 }
 .user__info {
   display: inline-block;
@@ -56,6 +91,7 @@ body {
   font-weight: 700;
   margin-bottom: 0;
   margin-top: 3px;
+  transition: all 0.3s;
 }
 .type {
   color: hsl(333, 80%, 67%);
@@ -69,18 +105,64 @@ body {
   color: hsl(0, 0%, 100%);
   font-weight: 500;
   line-height: 1.5;
+  transition: all 0.3s;
+}
+/* Top Component */
+@media screen and (min-width: 800px) {
+  .top {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 5rem;
+    max-width: 1100px;
+    margin: 2rem auto;
+    column-gap: 5vw;
+  }
+  .block--header {
+    max-width: 400px;
+    flex-grow: 0;
+  }
+  .block--rating {
+    max-width: 800px;
+    margin-left: 0;
+  }
 }
 
 .testimonial {
   background: hsl(300, 43%, 22%);
   padding: 3rem;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 8px;
   margin-bottom: 2rem;
+  transition: all 0.3s;
+  z-index: 1;
+}
+@media screen and (min-width: 800px) {
+  .second {
+    position: relative;
+    top: 2rem;
+  }
+  .third {
+    position: relative;
+    top: 4rem;
+  }
 }
 .testimonial:hover {
-  background: hsl(300, 24%, 96%);
-  transform: scale(1.05);
+  background: white;
+  box-shadow: 0 0 10px lightgrey;
+}
+.testimonial:hover .user__image {
+  transform: scale(1.2);
+}
+.testimonial:hover .user__name,
+.testimonial:hover .user__review {
+  color: hsl(300, 43%, 22%);
+}
+@media screen and (min-width: 800px) {
+  .block--testimonial {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    column-gap: 2rem;
+  }
 }
 
 /* Blocks */
@@ -90,19 +172,48 @@ body {
   margin-right: auto;
 }
 
+@media screen and (min-width: 800px) {
+  .block {
+    max-width: 1100px;
+  }
+}
+
 /*TODO: Create a custom hover effect animation for the testimonial component */
 /*TODO: Create the Desktop View Next*/
 .container {
   position: relative;
-  margin: 0rem 1rem;
+  overflow: hidden;
 }
+.content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+@media screen and (min-width: 800px) {
+  .content {
+    margin: 4rem;
+  }
+}
+/* Background Images */
 .image--background {
   position: absolute;
   width: 100%;
-  object-fit: ;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .image--background--bottom {
-  top: calc(100% - 120vw);
+  bottom: -5rem;
   position: absolute;
+}
+@media screen and (min-width: 800px) {
+  .image--background {
+    width: 45%;
+    left: -1rem;
+    top: -1rem;
+  }
+  .image--background--bottom {
+    width: 70vw;
+    left: 30vw;
+    top: 25vh;
+  }
 }
