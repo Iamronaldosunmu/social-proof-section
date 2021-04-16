@@ -72,10 +72,11 @@ body {
   padding: 3rem;
   overflow: hidden;
   border-radius: 20px;
+  margin-bottom: 2rem;
 }
 
 .block {
-  max-width: 450px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
