@@ -1,0 +1,16 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5rem;
+  font-family: "Spartan", sans-serif;
+}
+.body__heading {
+  color: hsl(300, 43%, 22%);
+  font-size: 3.6rem;
+  text-align: center;
+}
+.body__text {
+  text-align: center;
+  color: hsl(303, 10%, 53%);
+}
