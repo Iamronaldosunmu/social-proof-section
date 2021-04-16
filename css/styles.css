@@ -7,13 +7,17 @@ body {
 }
 .body__heading {
   color: hsl(300, 43%, 22%);
-  font-size: 3.6rem;
+  font-size: 4rem;
   text-align: center;
   font-weight: 700;
+  padding-top: 7rem;
+  line-height: 1;
 }
 .body__text {
   text-align: center;
   color: hsl(303, 10%, 53%);
+  margin-top: 2rem;
+  font-weight: 500;
 }
 /* Rating Component */
 .rating {
@@ -74,9 +78,31 @@ body {
   border-radius: 20px;
   margin-bottom: 2rem;
 }
+.testimonial:hover {
+  background: hsl(300, 24%, 96%);
+  transform: scale(1.05);
+}
 
+/* Blocks */
 .block {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*TODO: Create a custom hover effect animation for the testimonial component */
+/*TODO: Create the Desktop View Next*/
+.container {
+  position: relative;
+  margin: 0rem 1rem;
+}
+.image--background {
+  position: absolute;
+  width: 100%;
+  object-fit: ;
+}
+
+.image--background--bottom {
+  top: calc(100% - 120vw);
+  position: absolute;
 }
