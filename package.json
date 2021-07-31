@@ -1,12 +1,12 @@
 {
   "name": "social-proof-section-master",
   "version": "1.0.0",
-  "description": "- Live Site URL: [View the live site here](https:Iamronaldosunmu.github.io/social-proof-section)",
+  "description": "- Live Site URL: [View the live site here](https://Iamronaldosunmu.github.io/social-proof-section)",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https:Iamronaldosunmu.github.io/social-proof-section",
+  "homepage": "https://Iamronaldosunmu.github.io/social-proof-section",
   "keywords": [],
   "author": "",
   "license": "ISC",
