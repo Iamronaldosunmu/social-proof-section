@@ -80,8 +80,6 @@ I am currently learning User Interface design with Adobe XD so that I'll be able
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@IamRonald05](https://www.twitter.com/IamRonald05)
 
 
