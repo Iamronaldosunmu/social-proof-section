@@ -1,6 +1,6 @@
 # Frontend Mentor - Social proof section solution
 
-- Live Site URL: [View the live site here](https:Iamronaldosunmu.github.io/social-proof-section)
+- Live Site URL: [View the live site here](https://Iamronaldosunmu.github.io/social-proof-section)
 
 
 
@@ -39,7 +39,7 @@ This is a screenshot of my solution, it was very long so I had to crop it.
 
 ### Links
 
-- Live Site URL: [View the live site here](https:Iamronaldosunmu.github.io/social-proof-section)
+- Live Site URL: [View the live site here](https://Iamronaldosunmu.github.io/social-proof-section)
 
 ## My process
 Built this website using the bottoms up approach- Built the components then assembled them for the final product. I also used the BEM system of naming classes.
